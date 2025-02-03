@@ -23,14 +23,17 @@ nav li{
     display: inline;
     margin: 0 30px;
 }
+
 a{
     text-decoration: none;
 }
+
 nav a{
     color: black;
+
 }
-a:checked{
-    color: yellow;
+a:hover{
+    color: rgb(240, 54, 54);
 }
 #logo{
     width: 40px;
@@ -47,7 +50,7 @@ a:checked{
 #footer{
     height: 200px;
     border: 1px solid black;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
 #footer li{
@@ -84,31 +87,43 @@ a:checked{
 }
 .icon{
     margin-left: 10px;
+    width: 30px;
+    height: 30px;
 }
+
 .links{
     margin: 0 auto;
     width: 500px;
 }
 main{
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
 article{
-    height: 300px;
+    height: 400px;
     width: 100%;
     border: 1px solid black;
 }
 
 #space{
-    height: 200px;
+    height: 250px;
     float: right;
-    margin-top: 30px;
+    margin-top: 50px;
+    animation: moveUpDown 3s ease-in-out infinite;
+    margin-left: 40px;
 }
 
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);}
+}
 .sec{
     width: 100%;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 30px;
     margin-top: 10px;
     padding-left: 100px;
@@ -137,6 +152,7 @@ article{
 }
 
 .headtext h2{
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 #clickme{
@@ -147,4 +163,16 @@ article{
     border-radius: 3px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+
+#clickme {
+    transition: all 0.3s ease;
+}
+
+#clickme:hover {
+    background-color: rgb(27, 136, 187);
+    color: rgb(78, 75, 75);
+    padding: 10px;
+    margin: 10px 0;
 }
